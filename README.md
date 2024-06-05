@@ -16,4 +16,4 @@ The remaining files in the data folder contain versions in which I applied some 
 Depending on the use case, you might want to work with the detailed window titles in _Step 5_ or the final abstracted data in _Step 8_. If you are interested in, e.g., a technique that automatically recognises higher-level tasks performed based on (a set of) window titles, you would want to have a look at the _Step 5_ CSV. If you want to explore the data with process mining techniques immediately, you better check out _Step 8_. 
 
 ## Questions
-Do not hesitate to reach out with me (i.m.beerepoot@uu.nl) if you have any questions or if you want to test any techniques that you trained this data on. There is a lot more data where this came from, but not a lot of time to manually anonymise it. 
+Do not hesitate to reach out to me (i.m.beerepoot@uu.nl) if you have any questions or if you want to test any techniques that you trained this data on. There is a lot more data where this came from, but not enough time to manually anonymise it. 
