@@ -11,7 +11,7 @@ This repository contains a labelled subset of my AWT data. The labelling was don
 
 **Disclaimer:** Please be nice on me and my data. Although I replaced some of the information in there with placeholders, there might still be sensitive information present. I would appreciate people letting me know if they find something that should not be public.
 
-The remaining files in the data folder contain versions in which I applied some processing. The Python notebook contains details on the steps that I took. In _Step 6_, I merged all sequential events with the same activity label, resulting in an abstracted event log. In _Step 7_, I added a Duration column to calculate the duration between the start and end time, and in _Step 8_ I added a case type attribute. 
+The remaining files in the data folder contain versions in which I applied some processing. The Python notebook contains details on the steps that I took. In _Step 6_, I merged all sequential events with the same activity label, resulting in an abstracted event log (with 1227 events). In _Step 7_, I added a Duration column to calculate the duration between the start and end time, and in _Step 8_ I added a case type attribute. 
 
 Depending on the use case, you might want to work with the detailed window titles in _Step 5_ or the final abstracted data in _Step 8_. If you are interested in, e.g., a technique that automatically recognises higher-level tasks performed based on (a set of) window titles, you would want to have a look at the _Step 5_ CSV. If you want to explore the data with process mining techniques immediately, you better check out _Step 8_. 
 
