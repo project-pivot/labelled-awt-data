@@ -1,2 +1,13 @@
-# labelled-awt-data
-A Month's Worth of Labelled Active Window Tracking Data
+# A month's worth of labelled Active Window Tracking data
+This repo contains publicly-available process data from an academic, namely me (Iris). Specifically, it contains one month's worth of so-called Active Window Tracking (AWT) data. AWT data sits in between UI logs and traditional single-system event data. It is a recording of the apps that I used on the computer and the titles of the screens I had active over the course of four weeks in 2023, namely March 6 to April 2. For the recording, I used a tool called Tockler (http://maygo.github.io/tockler/), which has been running on my computer since December 2022. It logs application title, window title, start time and end time, and does not require manual activation of recording.  
+
+## First exploration of the data
+In our 2023 ICPM paper, we performed a first exploration of this data and reflected on the opportunity that the data brings for mining work practices. We found that it helps capture previously-unrecorded work activities, expose the relations between work processes, and navigate between different levels of data granularity. We refer to the paper for more details: 
+
+Beerepoot, I., Barenholz, D., Beekhuis, S., Gulden, J., Lee, S., Lu, X., ... & Reijers, H. A. (2023, October). A Window of Opportunity: Active Window Tracking for Mining Work Practices. In 2023 5th International Conference on Process Mining (ICPM) (pp. 57-64). IEEE.
+
+## Description of the data
+This repository contains a labelled subset of my AWT data. The labelling was done locally in Excel, by exporting the data from Tockler and adding two columns to the log, one for the corresponding activity and one for the case. We deductively selected activities from the University Job Classification system used by Dutch universities (https://tinyurl.com/msbef7bx). Examples of such activities are ‘Assessing exams and giving marks’, and ‘Conducting research’. When I could not fit the behaviour within the existing activities, I created a new activity. Examples of added activities include ‘Communicating about events’, ‘Planning teaching activities’, and ‘Reviewing journal and conference papers’. I selected the cases inductively, e.g., courses that I taught, students that I supervised, research papers that I worked on, events that the I organised, etc. Finally, I created an anonymous version of the data, where I replaced names and other sensitive information with placeholders. The result of this can be found in the data folder, with postfix Step 5. 
+
+The remaining files in the data folder contain versions in which I applied some processing. The Python notebook contains details on the steps that I took. In Step 6, I merged all sequential events with the same activity label, resulting in an abstracted event log. In Step 7, I added a Duration column to calculate the duration between the start and end time, and in step 8 I added a case type attribute. Depending on the use case, you might want to work with the detailed window titles in Step 5 or the final abstracted data in Step 8. 
+
