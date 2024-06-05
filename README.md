@@ -2,7 +2,7 @@
 This repo contains publicly-available process data from an academic, namely me (Iris). Specifically, it contains one month's worth of so-called Active Window Tracking (AWT) data. AWT data sits in between UI logs and traditional single-system event data. It is a recording of the apps that I used on the computer and the titles of the screens I had active over the course of four weeks in 2023, namely March 6 to April 2. For the recording, I used a tool called Tockler (http://maygo.github.io/tockler/), which has been running on my computer since December 2022. It logs application title, window title, start time and end time, without having to manually activate a recording.  
 
 ## Related publication
-In our 2023 ICPM paper, we performed a first exploration of this data and reflected on the opportunity that the data brings for mining work practices. We found that it helps capture previously-unrecorded work activities, expose the relations between work processes, and navigate between different levels of data granularity. We refer to the paper for more details: 
+In our 2023 ICPM paper, we performed a first exploration of this data and reflected on the opportunities that the data brings for mining work practices. We found that it helps capture previously-unrecorded work activities, expose the relations between work processes, and navigate between different levels of data granularity. We refer to the paper for more details: 
 
 Beerepoot, I., Barenholz, D., Beekhuis, S., Gulden, J., Lee, S., Lu, X., ... & Reijers, H. A. (2023, October). A Window of Opportunity: Active Window Tracking for Mining Work Practices. In 2023 5th International Conference on Process Mining (ICPM) (pp. 57-64). IEEE.
 
